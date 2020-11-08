@@ -19,31 +19,62 @@ body {
 
   &__menu {
     display: none;
+
     ul {
       list-style: none;
     }
+
     a {
       text-decoration: none;
       font-size: 50px;
       font-weight: 300;
       color: #d2d2d2;
+      margin-top: 96px;
 
+      &:hover, &:active {
+        color: #3677fd;
+      }
     }
+
     input:checked ~ & {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 1170px;
       align-items: center;
       position: absolute;
       background: #ffffff;
       height: 704px;
       z-index: 2;
-      top: 83px;
-      left: 0;
+      //top: 83px;
       margin: 0 auto;
       overflow: hidden;
+      border-radius: 10px;
+    }
+    &--social {
+      width: 360px;
+      display: flex;
+    }
+    &--social a {
+      width: 51px;
+      height: 51px;
+
+    }
+    &--social img {
+      width: 55px;
+      height: 55px;
+      padding: 10px;
+      border-radius: 50%;
+      background: #e1e1e1;
+    }
+    &--lang {
+      color: #d2d2d2;
+      font-weight: 400;
+      display: flex;
+      align-items: flex-end;
     }
   }
+
+
 
   &__cookies {
     background: #194277;
@@ -118,6 +149,7 @@ body {
     width: 42px;
     height: 42px;
     cursor: pointer;
+    z-index: 5;
 
     span {
       width: 25px;
@@ -146,6 +178,7 @@ body {
       }
     }
   }
+
   &:checked + label {
     span {
       background: none;
