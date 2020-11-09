@@ -1,0 +1,179 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 2.18;
+}
+
+.welcome {
+  background-image: url("image/welcome-bg.jpg");
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(39deg, #3695ff 0%, #3564fc 100%);
+  text-align: center;
+}
+.welcome__menu {
+  display: none;
+}
+.welcome__menu ul {
+  list-style: none;
+}
+.welcome__menu a {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 300;
+  color: #d2d2d2;
+  margin-top: 96px;
+}
+.welcome__menu a:hover, .welcome__menu a:active {
+  color: #3677fd;
+}
+input:checked ~ .welcome__menu {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  align-items: center;
+  position: absolute;
+  background: #ffffff;
+  height: 704px;
+  z-index: 2;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.welcome__menu--social {
+  width: 360px;
+  display: flex;
+}
+.welcome__menu--social a {
+  width: 51px;
+  height: 51px;
+}
+.welcome__menu--social img {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #e1e1e1;
+}
+.welcome__menu--lang {
+  color: #d2d2d2;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.welcome__cookies {
+  background: #194277;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.welcome__cookies--text {
+  font-weight: 400;
+  color: #ffffff;
+}
+.welcome__cookies--btn {
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  width: 112px;
+  height: 30px;
+  color: #194277;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+}
+.welcome__circle {
+  background: #ffffff;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  margin-bottom: 77px;
+}
+.welcome__title {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+  max-width: 805px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+.welcome__text {
+  max-width: 805px;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+}
+.welcome__btn {
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3695ff;
+  background-color: #fff;
+  width: 205px;
+  height: 55px;
+  border-radius: 55px;
+  margin-bottom: 148px;
+  cursor: pointer;
+  outline: none;
+}
+
+#welcome__hamburger {
+  display: none;
+}
+#welcome__hamburger + label {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 5;
+}
+#welcome__hamburger + label span {
+  width: 25px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  position: relative;
+  margin-bottom: 65px;
+  margin-right: 0;
+}
+#welcome__hamburger + label span:before, #welcome__hamburger + label span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+}
+#welcome__hamburger + label span:before {
+  top: -8px;
+}
+#welcome__hamburger + label span:after {
+  bottom: -8px;
+}
+#welcome__hamburger:checked + label span {
+  background: none;
+}
+#welcome__hamburger:checked + label span:before, #welcome__hamburger:checked + label span:after {
+  top: 50%;
+  bottom: initial;
+  width: 110%;
+}
+#welcome__hamburger:checked + label span:before {
+  transform: rotate(45deg);
+}
+#welcome__hamburger:checked + label span:after {
+  transform: rotate(-45deg);
+}
+
+.inner {
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
