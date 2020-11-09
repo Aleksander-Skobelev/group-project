@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 2.18;
 }
@@ -16,12 +16,15 @@ body {
   background-image: -webkit-linear-gradient(39deg, #3695ff 0%, #3564fc 100%);
   text-align: center;
 }
+
 .welcome__menu {
   display: none;
 }
+
 .welcome__menu ul {
   list-style: none;
 }
+
 .welcome__menu a {
   text-decoration: none;
   font-size: 50px;
@@ -29,9 +32,11 @@ body {
   color: #d2d2d2;
   margin-top: 96px;
 }
+
 .welcome__menu a:hover, .welcome__menu a:active {
   color: #3677fd;
 }
+
 input:checked ~ .welcome__menu {
   display: flex;
   flex-direction: column;
@@ -45,14 +50,17 @@ input:checked ~ .welcome__menu {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .welcome__menu--social {
   width: 360px;
   display: flex;
 }
+
 .welcome__menu--social a {
   width: 51px;
   height: 51px;
 }
+
 .welcome__menu--social img {
   width: 55px;
   height: 55px;
@@ -60,12 +68,14 @@ input:checked ~ .welcome__menu {
   border-radius: 50%;
   background: #e1e1e1;
 }
+
 .welcome__menu--lang {
   color: #d2d2d2;
   font-weight: 400;
   display: flex;
   align-items: center;
 }
+
 .welcome__cookies {
   background: #194277;
   height: 72px;
@@ -74,10 +84,12 @@ input:checked ~ .welcome__menu {
   align-items: center;
   margin-bottom: 31px;
 }
+
 .welcome__cookies--text {
   font-weight: 400;
   color: #ffffff;
 }
+
 .welcome__cookies--btn {
   border: none;
   font-size: 12px;
@@ -89,6 +101,7 @@ input:checked ~ .welcome__menu {
   cursor: pointer;
   outline: none;
 }
+
 .welcome__circle {
   background: #ffffff;
   width: 145px;
@@ -96,6 +109,7 @@ input:checked ~ .welcome__menu {
   border-radius: 50%;
   margin-bottom: 77px;
 }
+
 .welcome__title {
   font-size: 50px;
   font-weight: 900;
@@ -105,11 +119,13 @@ input:checked ~ .welcome__menu {
   text-align: center;
   margin-bottom: 43px;
 }
+
 .welcome__text {
   max-width: 805px;
   text-transform: uppercase;
   margin-bottom: 58px;
 }
+
 .welcome__btn {
   border: none;
   font-weight: 700;
@@ -127,12 +143,14 @@ input:checked ~ .welcome__menu {
 #welcome__hamburger {
   display: none;
 }
+
 #welcome__hamburger + label {
   width: 42px;
   height: 42px;
   cursor: pointer;
   z-index: 5;
 }
+
 #welcome__hamburger + label span {
   width: 25px;
   height: 2px;
@@ -142,31 +160,38 @@ input:checked ~ .welcome__menu {
   margin-bottom: 65px;
   margin-right: 0;
 }
+
 #welcome__hamburger + label span:before, #welcome__hamburger + label span:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 2px;
   background: #ffffff;
   display: block;
 }
+
 #welcome__hamburger + label span:before {
   top: -8px;
 }
+
 #welcome__hamburger + label span:after {
   bottom: -8px;
 }
+
 #welcome__hamburger:checked + label span {
   background: none;
 }
+
 #welcome__hamburger:checked + label span:before, #welcome__hamburger:checked + label span:after {
   top: 50%;
   bottom: initial;
   width: 110%;
 }
+
 #welcome__hamburger:checked + label span:before {
   transform: rotate(45deg);
 }
+
 #welcome__hamburger:checked + label span:after {
   transform: rotate(-45deg);
 }
@@ -176,9 +201,67 @@ input:checked ~ .welcome__menu {
   padding: 0 15px;
 }
 
+.expert {
+  background-color: #f1f8ff;
+  width: 100%;
+}
+
+.expert__header {
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  color: #368bf3;
+  padding-top: 100px;
+}
+
+.expert__content {
+  margin-top: 120px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.expert__content__item {
+  margin-bottom: 100px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.expert__content__header {
+  text-align: center;
+  color: #3677fd;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.expert__content__info {
+  width: 356px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  font-family: Lato;
+  color: #5a5a5a;
+}
+
+.expert__content__img {
+  padding-bottom: 65px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1175px) {
+  .expert__content {
+    justify-content: center;
+  }
+}
+
 .works {
   padding-top: 90px;
 }
+
 .works__title {
   color: #3677fd;
   text-align: center;
@@ -187,6 +270,7 @@ input:checked ~ .welcome__menu {
   line-height: 35.12px;
   margin-bottom: 100px;
 }
+
 .works__container {
   display: flex;
   flex-wrap: wrap;
@@ -195,12 +279,14 @@ input:checked ~ .welcome__menu {
   align-content: space-between;
   margin-bottom: 190px;
 }
+
 @media screen and (max-width: 1140px) {
   .works__container {
     width: 750px;
     height: 893px;
   }
 }
+
 @media screen and (max-width: 750px) {
   .works__container {
     width: 100%;
@@ -208,6 +294,7 @@ input:checked ~ .welcome__menu {
     justify-content: center;
   }
 }
+
 .works__container .img {
   width: 360px;
   height: 270px;
@@ -215,26 +302,33 @@ input:checked ~ .welcome__menu {
   border-radius: 10px;
   margin: 0;
 }
+
 .works__container .img:hover {
   background-size: contain;
 }
+
 .works__container .img--first {
   background-image: url("image/work1.png");
 }
+
 .works__container .img--second {
   background-image: url("image/work2.png");
 }
+
 .works__container .img--third {
   background-image: url("image/work3.png");
 }
+
 .works__container .img--fourth {
   background-image: url("image/work4.png");
   background-position: center;
 }
+
 .works__container .img--fifth {
   background-image: url("image/work5.png");
   background-position: center;
 }
+
 .works__container .img--sixth {
   background-image: url("image/work6.png");
   background-position: center;
@@ -244,6 +338,7 @@ input:checked ~ .welcome__menu {
   background: #f1f8ff;
   padding-top: 90px;
 }
+
 .clients__title {
   font-size: 50px;
   color: #3677fd;
@@ -252,12 +347,14 @@ input:checked ~ .welcome__menu {
   line-height: 35.12px;
   margin-bottom: 70px;
 }
+
 .clients__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 100px;
 }
+
 @media screen and (max-width: 1140px) {
   .clients__container {
     width: 500px;
@@ -265,19 +362,20 @@ input:checked ~ .welcome__menu {
     justify-content: space-around;
   }
 }
+
 @media screen and (max-width: 520px) {
   .clients__container {
     width: 250px;
     flex-wrap: wrap;
   }
 }
+
 .clients__container__link {
   filter: grayscale(100%);
   opacity: 20%;
 }
+
 .clients__container__link:hover {
   filter: none;
   opacity: 1;
 }
-
-/*# sourceMappingURL=style.css.map */

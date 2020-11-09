@@ -208,10 +208,60 @@ body {
 .about {
   //Николай
 }
-
+//Ваня
 .expert {
-  //Иван
+  background-color: #f1f8ff;
+  width: 100%;
 }
+.expert__header {
+  font-family: Lato;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  color: #368bf3;
+
+  padding-top: 100px;
+}
+.expert__content {
+  margin-top: 120px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.expert__content__item {
+  margin-bottom: 100px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.expert__content__header {
+  text-align: center;
+  color: #3677fd;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.expert__content__info {
+  width: 356px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  font-family: Lato;
+  color: #5a5a5a;
+}
+.expert__content__img {
+  padding-bottom: 65px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1175px) {
+  .expert__content {
+    justify-content: center;
+  }
+}
+
+
+
 
 .works {
   padding-top: 90px;
